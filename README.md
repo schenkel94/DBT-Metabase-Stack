@@ -14,6 +14,9 @@ O dashboard foi construído no Metabase usando as tabelas da camada `analytics`.
 
 ![Demo do dashboard](Metabase/dashboard-assets/screenshots/dashboard-demo.gif)
 
+Vídeo completo: [Overview MP4](Metabase/dashboard-assets/screenshots/dashboard-demo.mp4)
+Screenshots: [Pagina de Screenshots](Metabase/dashboard-assets/screenshots)
+
 Principais perguntas respondidas:
 
 - Qual é a receita líquida total e sua evolução?
