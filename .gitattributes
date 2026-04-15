@@ -9,5 +9,4 @@ Metabase/*.ps1 linguist-vendored=true
 models/**/*.sql linguist-detectable=true
 tests/**/*.sql linguist-detectable=true
 analyses/**/*.sql linguist-detectable=true
-*.yml linguist-detectable=true
 *.yaml linguist-detectable=true
