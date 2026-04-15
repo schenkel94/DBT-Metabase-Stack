@@ -13,7 +13,6 @@ O case simula uma operação de e-commerce com clientes, pedidos, itens e produt
 O dashboard foi construído no Metabase usando as tabelas da camada `analytics`.
 
 ![Demo do dashboard](Metabase/dashboard-assets/screenshots/dashboard-demo.gif)
-![Demo do dashboard](Metabase/dashboard-assets/screenshots/dashboard-demo.mp4)
 
 Principais perguntas respondidas:
 
