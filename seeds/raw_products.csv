@@ -1,0 +1,121 @@
+product_id,product_name,category,unit_price,is_active
+101,Cadeira Ergonomica Studio 101,Moveis,1549.90,true
+102,Halteres Ajustaveis Plus 102,Esporte,349.90,true
+103,Teclado Mecanico Compact 103,Eletronicos,579.90,true
+104,Mochila Executiva Compact 104,Moda,539.90,true
+105,Estante Modular Pro 105,Moveis,779.90,false
+106,Cadeira Ergonomica Pro 106,Moveis,1329.90,true
+107,Bicicleta Urbana Basic 107,Esporte,4279.90,true
+108,Monitor 27 Compact 108,Eletronicos,2199.90,true
+109,Halteres Ajustaveis Compact 109,Esporte,459.90,true
+110,Cadeira Ergonomica Max 110,Moveis,1389.90,true
+111,Tenis Running Max 111,Esporte,629.90,true
+112,Monitor 27 Compact 112,Eletronicos,2329.90,true
+113,Cadeira Ergonomica Max 113,Moveis,2249.90,true
+114,Oculos de Sol Plus 114,Moda,429.90,true
+115,Mochila Executiva Compact 115,Moda,619.90,true
+116,Estante Modular Max 116,Moveis,589.90,true
+117,Notebook Pro Pro 117,Eletronicos,7489.90,false
+118,Jaqueta Corta Vento Compact 118,Moda,629.90,true
+119,Mochila Executiva Max 119,Moda,499.90,true
+120,Luminaria Smart Plus 120,Casa,369.90,true
+121,Mochila Executiva Basic 121,Moda,489.90,true
+122,Tenis Running Plus 122,Esporte,269.90,true
+123,Gaveteiro Pro 123,Moveis,339.90,true
+124,Tenis Running Plus 124,Esporte,269.90,true
+125,Oculos de Sol Basic 125,Moda,569.90,true
+126,Headset USB Compact 126,Eletronicos,479.90,true
+127,Bicicleta Urbana Studio 127,Esporte,3219.90,true
+128,Relogio Casual Studio 128,Moda,669.90,true
+129,Halteres Ajustaveis Pro 129,Esporte,1299.90,true
+130,Halteres Ajustaveis Studio 130,Esporte,1229.90,true
+131,Luminaria Smart Basic 131,Casa,119.90,true
+132,Mouse Sem Fio Pro 132,Eletronicos,229.90,true
+133,Purificador de Ar Compact 133,Casa,759.90,true
+134,Esteira Compacta Compact 134,Esporte,6139.90,true
+135,Aspirador Robo Plus 135,Casa,1249.90,true
+136,Estante Modular Plus 136,Moveis,1349.90,true
+137,Bicicleta Urbana Compact 137,Esporte,4229.90,true
+138,Tenis Running Compact 138,Esporte,589.90,true
+139,Bicicleta Urbana Studio 139,Esporte,3879.90,true
+140,Tenis Running Studio 140,Esporte,709.90,true
+141,Jaqueta Corta Vento Compact 141,Moda,599.90,true
+142,Relogio Casual Studio 142,Moda,979.90,true
+143,Jaqueta Corta Vento Pro 143,Moda,389.90,true
+144,Luminaria Smart Plus 144,Casa,139.90,true
+145,Relogio Casual Compact 145,Moda,659.90,true
+146,Jaqueta Corta Vento Plus 146,Moda,289.90,true
+147,Aspirador Robo Compact 147,Casa,2419.90,true
+148,Relogio Casual Compact 148,Moda,229.90,true
+149,Tenis Running Compact 149,Esporte,689.90,true
+150,Luminaria Smart Basic 150,Casa,259.90,false
+151,Cadeira Ergonomica Compact 151,Moveis,819.90,true
+152,Gaveteiro Compact 152,Moveis,499.90,true
+153,Aspirador Robo Studio 153,Casa,1049.90,true
+154,Teclado Mecanico Compact 154,Eletronicos,739.90,true
+155,Oculos de Sol Plus 155,Moda,379.90,true
+156,Cafeteira Max 156,Casa,679.90,true
+157,Cafeteira Basic 157,Casa,1099.90,true
+158,Esteira Compacta Compact 158,Esporte,5929.90,true
+159,Jaqueta Corta Vento Compact 159,Moda,679.90,true
+160,Cadeira Ergonomica Plus 160,Moveis,2339.90,true
+161,Headset USB Basic 161,Eletronicos,379.90,true
+162,Mesa Ajustavel Studio 162,Moveis,3229.90,false
+163,Esteira Compacta Basic 163,Esporte,3009.90,true
+164,Teclado Mecanico Compact 164,Eletronicos,439.90,true
+165,Relogio Casual Basic 165,Moda,889.90,true
+166,Mesa Ajustavel Studio 166,Moveis,1359.90,true
+167,Tenis Running Basic 167,Esporte,439.90,true
+168,Purificador de Ar Pro 168,Casa,1039.90,true
+169,Oculos de Sol Studio 169,Moda,549.90,true
+170,Notebook Pro Compact 170,Eletronicos,6219.90,true
+171,Jaqueta Corta Vento Basic 171,Moda,529.90,true
+172,Headset USB Pro 172,Eletronicos,429.90,true
+173,Relogio Casual Studio 173,Moda,909.90,true
+174,Mouse Sem Fio Compact 174,Eletronicos,109.90,true
+175,Monitor 27 Studio 175,Eletronicos,2009.90,true
+176,Mesa Ajustavel Compact 176,Moveis,2219.90,true
+177,Oculos de Sol Compact 177,Moda,549.90,false
+178,Cadeira Ergonomica Max 178,Moveis,1919.90,false
+179,Notebook Pro Plus 179,Eletronicos,8059.90,true
+180,Jaqueta Corta Vento Pro 180,Moda,389.90,true
+181,Tenis Running Pro 181,Esporte,229.90,true
+182,Mochila Executiva Compact 182,Moda,529.90,false
+183,Mochila Executiva Compact 183,Moda,599.90,true
+184,Mochila Executiva Pro 184,Moda,569.90,true
+185,Mouse Sem Fio Max 185,Eletronicos,149.90,true
+186,Headset USB Plus 186,Eletronicos,429.90,true
+187,Halteres Ajustaveis Compact 187,Esporte,519.90,true
+188,Cafeteira Studio 188,Casa,1249.90,true
+189,Notebook Pro Studio 189,Eletronicos,7249.90,true
+190,Mouse Sem Fio Plus 190,Eletronicos,209.90,true
+191,Aspirador Robo Max 191,Casa,2989.90,true
+192,Mesa Ajustavel Plus 192,Moveis,1729.90,true
+193,Cadeira Ergonomica Plus 193,Moveis,1849.90,true
+194,Teclado Mecanico Max 194,Eletronicos,679.90,false
+195,Mouse Sem Fio Basic 195,Eletronicos,119.90,true
+196,Purificador de Ar Plus 196,Casa,1609.90,true
+197,Cafeteira Plus 197,Casa,589.90,true
+198,Relogio Casual Compact 198,Moda,689.90,true
+199,Purificador de Ar Max 199,Casa,849.90,true
+200,Estante Modular Pro 200,Moveis,1499.90,true
+201,Luminaria Smart Max 201,Casa,239.90,true
+202,Bicicleta Urbana Plus 202,Esporte,3559.90,true
+203,Aspirador Robo Studio 203,Casa,1419.90,true
+204,Notebook Pro Basic 204,Eletronicos,8279.90,true
+205,Oculos de Sol Studio 205,Moda,209.90,false
+206,Luminaria Smart Compact 206,Casa,349.90,true
+207,Gaveteiro Plus 207,Moveis,669.90,true
+208,Halteres Ajustaveis Studio 208,Esporte,359.90,true
+209,Jaqueta Corta Vento Studio 209,Moda,249.90,true
+210,Jaqueta Corta Vento Compact 210,Moda,559.90,true
+211,Monitor 27 Max 211,Eletronicos,1489.90,true
+212,Cadeira Ergonomica Compact 212,Moveis,1069.90,true
+213,Luminaria Smart Max 213,Casa,389.90,true
+214,Mouse Sem Fio Basic 214,Eletronicos,209.90,true
+215,Purificador de Ar Studio 215,Casa,1419.90,true
+216,Halteres Ajustaveis Studio 216,Esporte,1099.90,true
+217,Relogio Casual Max 217,Moda,1069.90,true
+218,Halteres Ajustaveis Pro 218,Esporte,909.90,true
+219,Mochila Executiva Studio 219,Moda,619.90,true
+220,Cadeira Ergonomica Studio 220,Moveis,1799.90,true

@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: staging_customers
+    config:
+      alias: preparacao_clientes
+    description: Clientes padronizados a partir do CSV bruto.
+    columns:
+      - name: customer_id
+        description: Identificador unico do cliente.
+        tests:
+          - not_null
+          - unique
+      - name: email
+        description: Email normalizado em minusculas.
+        tests:
+          - not_null
+      - name: signup_date
+        description: Data de cadastro do cliente.
+        tests:
+          - not_null
+
+  - name: staging_products
+    config:
+      alias: preparacao_produtos
+    description: Produtos padronizados com preco e status ativo.
+    columns:
+      - name: product_id
+        description: Identificador unico do produto.
+        tests:
+          - not_null
+          - unique
+      - name: unit_price
+        description: Preco unitario padrao.
+        tests:
+          - not_null
+
+  - name: staging_orders
+    config:
+      alias: preparacao_pedidos
+    description: Pedidos padronizados com status e metodo de pagamento.
+    columns:
+      - name: order_id
+        description: Identificador unico do pedido.
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: Cliente associado ao pedido.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('staging_customers')
+                field: customer_id
+      - name: status
+        description: Status do pedido.
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['completed', 'cancelled', 'returned']
+      - name: payment_method
+        description: Meio de pagamento.
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['credit_card', 'pix', 'boleto', 'debit_card']
+
+  - name: staging_order_items
+    config:
+      alias: preparacao_itens_pedido
+    description: Itens de pedido com quantidade, preco e valor bruto.
+    columns:
+      - name: order_item_id
+        description: Identificador unico do item do pedido.
+        tests:
+          - not_null
+          - unique
+      - name: order_id
+        description: Pedido associado.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('staging_orders')
+                field: order_id
+      - name: product_id
+        description: Produto associado.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('staging_products')
+                field: product_id

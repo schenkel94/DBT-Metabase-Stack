@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: quality_order_items_enriched
+    config:
+      alias: qualidade_itens_pedido_enriquecidos
+    description: Itens de pedido enriquecidos com nome, categoria e status do produto.
+    columns:
+      - name: order_item_id
+        tests:
+          - not_null
+          - unique
+      - name: order_id
+        tests:
+          - not_null
+      - name: gross_amount
+        description: Quantidade multiplicada pelo preco unitario do item.
+
+  - name: quality_orders_enriched
+    config:
+      alias: qualidade_pedidos_enriquecidos
+    description: Pedidos enriquecidos com cliente e metricas agregadas dos itens.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+      - name: net_revenue
+        description: Receita considerada apenas para pedidos completed.

@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: analytics_customers
+    config:
+      alias: analise_clientes
+    description: Tabela analitica de clientes com historico de compras e segmentacao simples.
+    columns:
+      - name: customer_id
+        description: Chave primaria da dimensao.
+        tests:
+          - not_null
+          - unique
+      - name: customer_segment
+        description: Segmento calculado com base em compras completed.
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['recorrente', 'novo_comprador', 'sem_compra']
+
+  - name: analytics_orders
+    config:
+      alias: analise_pedidos
+    description: Tabela analitica de pedidos com receita bruta e receita liquida.
+    columns:
+      - name: order_id
+        description: Chave primaria do fato.
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: Cliente do pedido.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('analytics_customers')
+                field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['completed', 'cancelled', 'returned']
+
+  - name: analytics_sales_daily
+    config:
+      alias: analise_vendas_diarias
+    description: Receita e pedidos agregados por dia.
+    columns:
+      - name: order_date
+        description: Data do pedido.
+        tests:
+          - not_null
+          - unique
+
+  - name: analytics_product_performance
+    config:
+      alias: analise_desempenho_produtos
+    description: Desempenho agregado por produto.
+    columns:
+      - name: product_id
+        description: Produto analisado.
+        tests:
+          - not_null
+          - unique

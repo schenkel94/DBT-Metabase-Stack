@@ -1,0 +1,84 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    config:
+      alias: bruto_clientes
+    description: Cadastro bruto de clientes usado como fonte de exemplo.
+    columns:
+      - name: customer_id
+        description: Identificador unico do cliente.
+        tests:
+          - not_null
+          - unique
+      - name: email
+        description: Email do cliente.
+        tests:
+          - not_null
+
+  - name: raw_products
+    config:
+      alias: bruto_produtos
+    description: Cadastro bruto de produtos.
+    columns:
+      - name: product_id
+        description: Identificador unico do produto.
+        tests:
+          - not_null
+          - unique
+      - name: unit_price
+        description: Preco unitario padrao do produto.
+        tests:
+          - not_null
+
+  - name: raw_orders
+    config:
+      alias: bruto_pedidos
+    description: Pedidos brutos feitos pelos clientes.
+    columns:
+      - name: order_id
+        description: Identificador unico do pedido.
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: Cliente associado ao pedido.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('raw_customers')
+                field: customer_id
+      - name: status
+        description: Status operacional do pedido.
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['completed', 'cancelled', 'returned']
+
+  - name: raw_order_items
+    config:
+      alias: bruto_itens_pedido
+    description: Itens brutos de cada pedido.
+    columns:
+      - name: order_item_id
+        description: Identificador unico do item.
+        tests:
+          - not_null
+          - unique
+      - name: order_id
+        description: Pedido associado ao item.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('raw_orders')
+                field: order_id
+      - name: product_id
+        description: Produto vendido no item.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('raw_products')
+                field: product_id

@@ -1,0 +1,15 @@
+.venv/
+.user.yml
+target/
+logs/
+dbt_packages/
+ecommerce.duckdb
+ecommerce.duckdb.wal
+Metabase/local/*
+!Metabase/local/.gitkeep
+!Metabase/local/app-db/
+!Metabase/local/app-db/.gitkeep
+!Metabase/local/plugins/
+!Metabase/local/plugins/.gitkeep
+*.pyc
+__pycache__/

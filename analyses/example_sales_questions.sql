@@ -1,0 +1,15 @@
+-- Exemplos de perguntas que este projeto ajuda a responder:
+-- Os refs usam os nomes tecnicos em ingles do dbt, mas compilam para tabelas
+-- e views em portugues brasileiro no DuckDB.
+--
+-- 1. Qual foi a receita liquida por dia?
+-- select * from {{ ref('analytics_sales_daily') }} order by order_date;
+-- No DuckDB: select * from analise_vendas_diarias order by order_date;
+--
+-- 2. Quais clientes sao recorrentes?
+-- select * from {{ ref('analytics_customers') }} where customer_segment = 'recorrente';
+-- No DuckDB: select * from analise_clientes where customer_segment = 'recorrente';
+--
+-- 3. Quais produtos geram mais receita?
+-- select * from {{ ref('analytics_product_performance') }} order by net_revenue desc;
+-- No DuckDB: select * from analise_desempenho_produtos order by net_revenue desc;
