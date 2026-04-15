@@ -1,0 +1,13 @@
+# Generated data
+seeds/*.csv linguist-generated=true
+
+# Helper scripts are not the main stack of this portfolio project
+scripts/generate_raw_data.py linguist-vendored=true
+Metabase/*.ps1 linguist-vendored=true
+
+# Core analytics engineering assets
+models/**/*.sql linguist-detectable=true
+tests/**/*.sql linguist-detectable=true
+analyses/**/*.sql linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
