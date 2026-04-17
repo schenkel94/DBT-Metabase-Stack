@@ -43,7 +43,7 @@ java -version
 Rodar dbt:
 
 ```powershell
-cd C:\Users\Acer\Documents\PROJETOS\DBT
+cd C:\Users\...\DBT
 .\.venv\Scripts\dbt.exe build --profiles-dir .
 ```
 
@@ -52,7 +52,7 @@ cd C:\Users\Acer\Documents\PROJETOS\DBT
 Baixe o Metabase e o driver DuckDB:
 
 ```powershell
-cd C:\Users\Acer\Documents\PROJETOS\DBT\Metabase
+cd C:\Users\...\DBT\Metabase
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\download_metabase_local.ps1
 ```
@@ -72,10 +72,10 @@ http://localhost:3000
 
 ## Conexão DuckDB
 
-No Metabase, a conexão deve apontar para:
+No Metabase, a conexão deve apontar para a pasta clonada:
 
 ```text
-C:/Users/Acer/Documents/PROJETOS/DBT/ecommerce.duckdb
+C:/Users/.../DBT/ecommerce.duckdb
 ```
 
 Campos que devem ficar vazios:
